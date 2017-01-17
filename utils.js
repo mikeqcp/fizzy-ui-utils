@@ -120,10 +120,6 @@ utils.filterFindElements = function( elems, selector ) {
   var ffElems = [];
 
   elems.forEach( function( elem ) {
-    // check that elem is an actual element
-    if ( !( elem instanceof HTMLElement ) ) {
-      return;
-    }
     // add elem if no selector
     if ( !selector ) {
       ffElems.push( elem );
